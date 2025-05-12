@@ -1,0 +1,124 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  color: #222;
+}
+
+#ui-panel {
+  width: 280px;
+  background: #f4f4f4;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  max-height: 100vh;  /* ensures it doesn't overflow the screen */
+  overflow-y: auto;   /* adds scroll if needed */
+  padding: 25px;       /* reduce padding */
+  gap: 6px;
+}
+
+/* #ui-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+} */
+
+
+#ui-panel label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 2px;  /* tighter space between label and slider */
+  margin-top: 8px;     /* uniform space above each control group */
+}
+
+#ui-panel input[type="range"],
+#ui-panel input[type="color"],
+#ui-panel input[type="number"] {
+  display: block;
+  margin-bottom: 4px;
+    width: 100%;
+}
+
+
+/* #admin-panel button {
+  font-size: 10px;
+  padding: 2px 2px;
+  margin-top: 2px;
+} */
+
+input[type="range"],
+input[type="color"] {
+  margin-top: 4px;
+}
+
+#color-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#color-row div {
+  flex: 1;
+}
+
+#strokeWeightSlider {
+  margin-top: 20px;
+}
+
+#symmetrySlider {
+  margin-top: 20px;
+}
+
+#mode-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  text-align: center;
+}
+
+#mode-row label {
+  flex: 1;
+}
+
+#sizePreviewCanvas {
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 1px solid #ccc;
+  background: white;
+  width: 60px;
+  height: 60px;
+}
+
+
+#canvas-holder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#admin-panel {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#admin-panel button {
+  padding: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#grid-controls {
+  margin-top: 16px;
+}
+
+#grid-controls label {
+  display: block;
+  margin-top: 10px;
+}
